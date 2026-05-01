@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEL | News & Opportunities</title>
+    <!-- Distinctive Fonts: Unbounded (Display/Tech) and Manrope (Refined Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Subtle noise texture overlay for a premium, tactile feel -->
+    <div class="noise-overlay"></div>
+    
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>INTEL<span>.</span></h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active" data-category="general">Global Briefing</a>
+                <a href="#" data-category="technology">Tech & AI</a>
+                <a href="#" data-category="business">Markets</a>
+                <a href="#" data-category="science">Science</a>
+                <a href="#" id="view-bookmarks" class="bookmark-link">Saved Assets</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="Scan network...">
+                </div>
+                <div class="status-indicator">
+                    <span class="dot"></span> Live Feed
+                </div>
+            </header>
+
+            <section class="feed-header">
+                <h2 id="feed-title">Global Briefing</h2>
+                <p>Real-time opportunity tracking and market analysis.</p>
+            </section>
+
+            <div id="loading" class="loader">Intercepting signals...</div>
+            
+            <div id="news-grid" class="news-grid">
+                <!-- Articles dynamically injected here -->
+            </div>
+
+        <!-- AI Summary Modal -->
+        <div id="ai-modal" class="ai-modal-overlay" style="display:none;">
+            <div class="ai-modal-box">
+                <div class="ai-modal-header">
+                    <span class="ai-modal-label">✦ AI INTELLIGENCE BRIEF</span>
+                    <button id="ai-modal-close" class="ai-modal-close">✕</button>
+                </div>
+                <h3 id="ai-modal-title" class="ai-modal-article-title"></h3>
+                <div id="ai-modal-body" class="ai-modal-body">
+                    <div class="ai-loading">Analyzing signal<span class="ai-dots">...</span></div>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
